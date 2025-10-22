@@ -33,6 +33,8 @@ public:
 	// スロー演出
 	static void Slow(int time = 10, int inter = 5) { slow_ = time; slowInter_ = inter; }
 
+	static constexpr int ENCOUNT = 60;
+
 	// 画面揺れの種類
 	enum ShakeKinds { WID/*横揺れ*/, HIG/*縦揺れ*/, DIAG/*斜め揺れ*/, ROUND/*くるくる*/ };
 	// 画面揺れの大きさ
@@ -54,7 +56,11 @@ private:
 
 	StageBase* stage_;
 	Player* player_;
-	Enemy* enemy_;
+	
+	// 敵関連
+	std::vector<Enemy*> enemy_;   // 複数の敵を動的に管理
+	std::list<Enemy*> enemysSortTbl; // 敵の描画順ソート用
+	int enCounter; // 敵出現用カウンタ
 
 	// ヒットストップカウンター
 	static int hitStop_;
@@ -64,7 +70,7 @@ private:
 	static int slowInter_;
 
     int startTimer_;
-	int limitTime_;
+	int limitTime_ = 20000;
 	bool isClear;
 
 	

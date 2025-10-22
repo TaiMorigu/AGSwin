@@ -7,6 +7,7 @@
 #include"../../Manager/Input/KeyManager.h"
 #include"../../scene/SceneManager/SceneManager.h"
 #include"../../Manager/Sound/SoundManager.h"
+#include"../../Object/Enemy/Enemynormal.h"
 
 int GameScene::hitStop_ = 0;
 
@@ -47,8 +48,6 @@ void GameScene::Load(void)
 	player_ = new Player(this);
 	player_->Load();
 
-	enemy_ = new Enemy();
-
 }
 
 void GameScene::Init(void)
@@ -68,7 +67,7 @@ void GameScene::Init(void)
 	//--------------------------------------------------------------------------------
 
 	startTimer_ = GetNowCount();
-	limitTime_ = 90000;
+	limitTime_;
 	isClear = false;
 #pragma endregion
 
@@ -78,6 +77,56 @@ void GameScene::Init(void)
 
 void GameScene::Update(void)
 {
+	// 敵の更新
+	size_t size = enemy_.size(); // 敵のテーブルの要素数を取得
+	for (int ii = 0; ii < size; ii++) {
+		enemy_[ii]->Update();
+	}
+
+	// エンカウンター
+	if (stage_->GetMapType() == StageBase::MAP_TYPE::E_MIYPE_GROUND)enCounter++;
+	if (enCounter > ENCOUNT) {
+
+		// 敵の生成
+		Enemy* e = nullptr;
+
+		// ランダムに種別を決める
+		int rr = GetRand(static_cast<int>(Enemy::ENEMY_TYPE::E_TYPE_MAX) - 1);
+		Enemy::ENEMY_TYPE rType = static_cast<Enemy::ENEMY_TYPE>(rr);
+		// 種別に対応した派生クラスのインスタンスを生成
+		switch (rType) {
+		case Enemy::ENEMY_TYPE::E_TYPE_NORMAL:
+			e = new Enemynormal();
+			break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_FLY:
+			//	e = new EnemyFly();
+			//	break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_FIRE:
+			//	e = new EnemyFire();
+			//	break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_LIZARD_SMALL:
+			//	e = new EnemyLizardSmall();
+			//	break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_LIZARD_BIG:
+			//	e = new EnemyLizardBig();
+			//	break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_DRAGON:
+			//	e = new EnemyDragon();
+			//	break;
+			//case EnemyBase::ENEMY_TYPE::E_TYPE_BOSS:
+			//	e = new EnemyBoss();
+			//	break;
+		}
+
+		if (e != nullptr) {
+			e->Load();
+			e->Init();
+			// 可変長配列に要素を追加する
+			enemy_.push_back(e);
+			enCounter = 0; // エンカウンターをリセット
+		}
+	}
+
 #pragma region 画面演出
 	if (hitStop_ > 0) { hitStop_--; return; }
 	if (shake_ > 0) { shake_--; }

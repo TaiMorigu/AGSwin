@@ -18,10 +18,6 @@ public:
 
 	void Create(Enemy::ENEMY_TYPE type);
 
-	
-
-	
-
 private:
 	GameScene* gInst;
 	std::vector<Enemy*> enemys_;
@@ -34,5 +30,4 @@ private:
 	std::string imgFName;
 	// “G‚Ì‰æ‘œƒTƒCƒY
 	Vector2I size;
-
 };

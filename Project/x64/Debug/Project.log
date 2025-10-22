@@ -1,57 +1,8 @@
-﻿  Application.cpp
-  Vector2.cpp
-  main.cpp
-  Collision.cpp
-  FPS.cpp
-  InputManager.cpp
-  KeyManager.cpp
-  Loading.cpp
-  SoundManager.cpp
-  Enemy.cpp
-  EnemyManager.cpp
-  Enemynormal.cpp
+﻿  Enemy.cpp
   Bullet.cpp
-  BulletManager.cpp
   Player.cpp
-  StageBase.cpp
-  UnitBase.cpp
-  ClearScene.cpp
   GameScene.cpp
-  OverScene.cpp
   SceneManager.cpp
-  TitleScene.cpp
-  Utility.cpp
 C:\Users\2416041\Documents\AGSwin\Src\Object\Player\Player.cpp(126,33): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
 C:\Users\2416041\Documents\AGSwin\Src\Object\Player\Player.cpp(125,42): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,15): error C2259: 'Enemy': 抽象クラスをインスタンス化できません。
-      C:\Users\2416041\Documents\AGSwin\Src\Object\Enemy\Enemy.h(10,7):
-      'Enemy' の宣言を確認してください
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,15):
-      次のメンバーが原因です:
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,15):
-      'void UnitBase::OnCollision(UnitBase *)': は抽象型です
-      C:\Users\2416041\Documents\AGSwin\Src\Object\UnitBase.h(53,15):
-      'UnitBase::OnCollision' の宣言を確認してください
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,15):
-      'void Enemy::SetEnemyParam(void)': は抽象型です
-      C:\Users\2416041\Documents\AGSwin\Src\Object\Enemy\Enemy.h(38,15):
-      'Enemy::SetEnemyParam' の宣言を確認してください
-  
-C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20): error C2259: 'Enemy': 抽象クラスをインスタンス化できません。
-      C:\Users\2416041\Documents\AGSwin\Src\Object\Enemy\Enemy.h(10,7):
-      'Enemy' の宣言を確認してください
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20):
-      次のメンバーが原因です:
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20):
-      'void UnitBase::OnCollision(UnitBase *)': は抽象型です
-      C:\Users\2416041\Documents\AGSwin\Src\Object\UnitBase.h(53,15):
-      'UnitBase::OnCollision' の宣言を確認してください
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20):
-      'void Enemy::SetEnemyParam(void)': は抽象型です
-      C:\Users\2416041\Documents\AGSwin\Src\Object\Enemy\Enemy.h(38,15):
-      'Enemy::SetEnemyParam' の宣言を確認してください
-  
-C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20): error C2512: 'Enemy::Enemy': クラス、構造体、共用体に既定のコンストラクターがありません。
-      C:\Users\2416041\Documents\AGSwin\Src\Scene\Game\GameScene.cpp(50,20):
-      引数リスト '()' を一致させようとしているとき
-  
+  Project.vcxproj -> C:\Users\2416041\Documents\AGSwin\x64\Debug\Project.exe
