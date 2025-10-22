@@ -1,13 +1,18 @@
 #pragma once
+
+#include<vector>
+#include<list>
 #include"../SceneBase.h"
 
 #include"../../Common/Vector2.h"
 
 #include"../../Manager/Collision/Collision.h"
 
+
 #include"../../Object/Stage/StageBase.h"
 #include"../../Object/Player/Player.h"
-#include"../../Object/Enemy/Enemy.h"
+#include"../../Object/Enemy/EnemyManager.h"
+
 
 class GameScene : public SceneBase
 {
@@ -56,11 +61,7 @@ private:
 
 	StageBase* stage_;
 	Player* player_;
-	
-	// 敵関連
-	std::vector<Enemy*> enemy_;   // 複数の敵を動的に管理
-	std::list<Enemy*> enemysSortTbl; // 敵の描画順ソート用
-	int enCounter; // 敵出現用カウンタ
+	EnemyManager* enemy_;
 
 	// ヒットストップカウンター
 	static int hitStop_;
@@ -73,7 +74,7 @@ private:
 	int limitTime_ = 20000;
 	bool isClear;
 
-	
+	int spawnCounter = 0; // 敵の出現間隔カウンター
 
 	// 画面揺れ------------------------
 	int mainScreen_;

@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\2416041\\Documents\\AGSwin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Scene\\Game\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Scene\\Game\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\EnemyManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Bullet\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Enemy\\EnemyManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Scene\\Game\\GameScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\BulletManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Bullet\\BulletManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Scene\\Game\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|solutionrelative:Src\\Object\\Player\\Bullet\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21C92BFB-F256-4992-A5D7-90D10F0C8865}|Project.vcxproj|C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\UnitBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,17 +58,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 18,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EnemyManager.h",
               "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.h",
               "RelativeDocumentMoniker": "Src\\Object\\Enemy\\EnemyManager.h",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.h",
               "RelativeToolTip": "Src\\Object\\Enemy\\EnemyManager.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-16T06:15:30.356Z",
               "IsPinned": true,
@@ -60,52 +76,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "EnemyManager.cpp",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.cpp",
+              "RelativeDocumentMoniker": "Src\\Object\\Enemy\\EnemyManager.cpp",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\EnemyManager.cpp",
+              "RelativeToolTip": "Src\\Object\\Enemy\\EnemyManager.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-22T07:14:27.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GameScene.h",
               "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.h",
               "RelativeDocumentMoniker": "Src\\Scene\\Game\\GameScene.h",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.h",
               "RelativeToolTip": "Src\\Scene\\Game\\GameScene.h",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAACMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv0wAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-22T02:04:46.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameScene.cpp",
-              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp",
-              "RelativeDocumentMoniker": "Src\\Scene\\Game\\GameScene.cpp",
-              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp",
-              "RelativeToolTip": "Src\\Scene\\Game\\GameScene.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-22T01:09:03.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp",
-              "RelativeDocumentMoniker": "Src\\Object\\Enemy\\Enemy.cpp",
-              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp",
-              "RelativeToolTip": "Src\\Object\\Enemy\\Enemy.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-22T01:03:50.667Z",
+              "WhenOpened": "2025-10-22T08:10:41.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "GameScene.cpp",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp",
+              "RelativeDocumentMoniker": "Src\\Scene\\Game\\GameScene.cpp",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Scene\\Game\\GameScene.cpp",
+              "RelativeToolTip": "Src\\Scene\\Game\\GameScene.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-22T07:54:37.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BulletManager.cpp",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\BulletManager.cpp",
+              "RelativeDocumentMoniker": "Src\\Object\\Player\\Bullet\\BulletManager.cpp",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\BulletManager.cpp",
+              "RelativeToolTip": "Src\\Object\\Player\\Bullet\\BulletManager.cpp",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-22T08:20:39.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.h",
               "RelativeDocumentMoniker": "Src\\Object\\Player\\Player.h",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.h",
               "RelativeToolTip": "Src\\Object\\Player\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAApwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-16T08:36:54.841Z",
               "EditorCaption": ""
@@ -118,35 +147,75 @@
               "RelativeDocumentMoniker": "Src\\Object\\Player\\Player.cpp",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Player.cpp",
               "RelativeToolTip": "Src\\Object\\Player\\Player.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAWwHAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-16T08:46:47.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Src\\Object\\Enemy\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.cpp",
+              "RelativeToolTip": "Src\\Object\\Enemy\\Enemy.cpp",
+              "ViewState": "AgIAAFgAAAAAAAAAAAApwDkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-22T01:03:50.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bullet.cpp",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.cpp",
+              "RelativeDocumentMoniker": "Src\\Object\\Player\\Bullet\\Bullet.cpp",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.cpp",
+              "RelativeToolTip": "Src\\Object\\Player\\Bullet\\Bullet.cpp",
+              "ViewState": "AgIAALAAAAAAAAAAAAAMwLsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-22T07:58:14.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Bullet.h",
+              "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.h",
+              "RelativeDocumentMoniker": "Src\\Object\\Player\\Bullet\\Bullet.h",
+              "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Player\\Bullet\\Bullet.h",
+              "RelativeToolTip": "Src\\Object\\Player\\Bullet\\Bullet.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAMwDAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-22T06:37:32.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Enemy.h",
               "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.h",
               "RelativeDocumentMoniker": "Src\\Object\\Enemy\\Enemy.h",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\Enemy\\Enemy.h",
               "RelativeToolTip": "Src\\Object\\Enemy\\Enemy.h",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwB0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-20T02:05:37.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "UnitBase.cpp",
               "DocumentMoniker": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\UnitBase.cpp",
               "RelativeDocumentMoniker": "Src\\Object\\UnitBase.cpp",
               "ToolTip": "C:\\Users\\2416041\\Documents\\AGSwin\\Src\\Object\\UnitBase.cpp",
               "RelativeToolTip": "Src\\Object\\UnitBase.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-16T08:38:05.439Z"
+              "WhenOpened": "2025-10-16T08:38:05.439Z",
+              "EditorCaption": ""
             }
           ]
         }

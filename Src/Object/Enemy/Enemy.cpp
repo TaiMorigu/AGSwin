@@ -12,9 +12,11 @@ Enemy::Enemy(GameScene* gs,const Vector2& playerPos):
 	playerPos(playerPos)
 {
 }
+
 Enemy::~Enemy(void)
 {
 }
+
 void Enemy::Load(void)
 {
 	SetEnemyParam(); // 敵キャラ個別のパラメータ設定処理
@@ -22,6 +24,7 @@ void Enemy::Load(void)
 	path += imgFName;
 	LoadDivGraph(path.c_str(), ANIM_NUMS, ANIM_NUMS, 1, size.x, size.y, img);
 }
+
 void Enemy::Init(void)
 {
 	dir = GetRand(static_cast<int>(Utility::DIRECTION::E_DIR_MAX) - 1);
@@ -51,7 +54,10 @@ void Enemy::Init(void)
 	pos.y = static_cast<float>(rpos.y);
 	animCounter = 0;
 	aliveFlg = true;
+
+	unit_.isAlive_ = true;
 }
+
 void Enemy::Update(void)
 {
 	animCounter++;
@@ -101,8 +107,11 @@ void Enemy::Update(void)
 #endif
 	}
 }
+
 void Enemy::Draw(void)
 {
+	if (unit_.isAlive_ == false) { return; }
+
 	int animNo = (animCounter / ANIM_INTERVAL) % ANIM_NUMS;
 	Vector2I stpos = gInst->GetLpStage()->GetMapDispStPos();
 
@@ -111,7 +120,7 @@ void Enemy::Draw(void)
 
 	DrawGraph(ePos.x - size.x / 2 - (stpos.x * StageBase::MAP_CHIP_SIZE_WID),
 		ePos.y - size.y / 2 - (stpos.y * StageBase::MAP_CHIP_SIZE_HIG),
-		img[dir],true);
+		img[0],true);
 }
 void Enemy::Release(void)
 {

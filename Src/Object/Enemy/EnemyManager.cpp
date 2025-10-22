@@ -17,7 +17,6 @@ EnemyManager::~EnemyManager()
 
 void EnemyManager::Load(void)
 {
-	
 }
 
 void EnemyManager::Init(void)
@@ -27,6 +26,13 @@ void EnemyManager::Init(void)
 
 void EnemyManager::Update(void)
 {
+	static int spawnCounter = 0;
+
+	if (++spawnCounter > 30.0f) {
+		spawnCounter = 0;
+		Create(Enemy::ENEMY_TYPE::E_TYPE_NORMAL);
+	}
+
 	for (auto& e : enemys_) { e->Update(); }
 }
 
@@ -37,19 +43,19 @@ void EnemyManager::Draw(void)
 
 void EnemyManager::Release(void)
 {
-	for (auto& e : enemys_) {
-		if (!e) { continue;}
-		e->Release();
-		delete e;
-		e = nullptr;
-	}
+  for (auto& e : enemys_) {
+     if (!e) { continue; }
+     e->Release();
+     delete e;
+     e = nullptr;
+  }
 	enemys_.clear();
 }
 
 void EnemyManager::Create(Enemy::ENEMY_TYPE type)
 {
 	bool recycle = false;
-	
+
 	for (auto& e : enemys_) {
 		if (e->GetUnit().isAlive_ == false) {
 			recycle = true;
@@ -63,7 +69,7 @@ void EnemyManager::Create(Enemy::ENEMY_TYPE type)
 		}
 	}
 
-	if (recycle) { return;}
+	if (recycle) { return; }
 
 	enemys_.emplace_back(new Enemynormal(gInst, playerPos));
 	enemys_.back()->Load();

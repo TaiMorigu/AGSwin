@@ -27,6 +27,8 @@ void BulletManager::Init(void)
 void BulletManager::Update(void)
 {
 	for (auto& b : bullets_) { b->Update(); }
+
+
 }
 
 void BulletManager::Draw(void)

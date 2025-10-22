@@ -20,14 +20,11 @@ public:
 
 private:
 	GameScene* gInst;
-	std::vector<Enemy*> enemys_;
 	const Vector2& playerPos;
 	const Utility::DIRECTION& playerDir;
-
 	int image_;
+	std::vector<Enemy*> enemys_;
 
-	// 敵の画像ファイル名
-	std::string imgFName;
-	// 敵の画像サイズ
-	Vector2I size;
+	const int ENEMY_SPAWN_INTERVAL = 5000; // 弾の発射間隔
+	int spawnCounter = 0; // 弾の発射間隔カウンター
 };

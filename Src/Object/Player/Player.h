@@ -38,6 +38,8 @@ private:
 	// プレイヤー画像
 	int player_img[ANIM_NUMS];
 
+	Vector2 GetPos() const;
+
 	// プレイヤーが向いている方向
 	Utility::DIRECTION playerDir;
 	// アニメーションカウンター

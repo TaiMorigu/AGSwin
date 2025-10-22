@@ -168,3 +168,8 @@ void Player::OnCollision(UnitBase* other)
 {
 }
 
+Vector2 Player::GetPos() const
+{
+	return Vector2();
+}
+

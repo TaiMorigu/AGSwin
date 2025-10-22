@@ -32,7 +32,7 @@ GameScene::~GameScene()
 
 void GameScene::Load(void)
 {
-	this->Release();
+	//this->Release();
 
 	// 画面演出用の一時画面
 	mainScreen_ = MakeScreen(Application::SCREEN_SIZE_X, Application::SCREEN_SIZE_Y);
@@ -47,6 +47,10 @@ void GameScene::Load(void)
 	// プレイヤー
 	player_ = new Player(this);
 	player_->Load();
+
+	// 敵管理
+	enemy_ = new EnemyManager(this, player_->GetUnit().pos_, player_->GetPlayerDir());
+	enemy_->Load();
 
 }
 
@@ -69,63 +73,16 @@ void GameScene::Init(void)
 	startTimer_ = GetNowCount();
 	limitTime_;
 	isClear = false;
+	
 #pragma endregion
 
 	stage_->Init();
 	player_->Init();
+	enemy_->Init();
 }
 
 void GameScene::Update(void)
 {
-	// 敵の更新
-	size_t size = enemy_.size(); // 敵のテーブルの要素数を取得
-	for (int ii = 0; ii < size; ii++) {
-		enemy_[ii]->Update();
-	}
-
-	// エンカウンター
-	if (stage_->GetMapType() == StageBase::MAP_TYPE::E_MIYPE_GROUND)enCounter++;
-	if (enCounter > ENCOUNT) {
-
-		// 敵の生成
-		Enemy* e = nullptr;
-
-		// ランダムに種別を決める
-		int rr = GetRand(static_cast<int>(Enemy::ENEMY_TYPE::E_TYPE_MAX) - 1);
-		Enemy::ENEMY_TYPE rType = static_cast<Enemy::ENEMY_TYPE>(rr);
-		// 種別に対応した派生クラスのインスタンスを生成
-		switch (rType) {
-		case Enemy::ENEMY_TYPE::E_TYPE_NORMAL:
-			e = new Enemynormal();
-			break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_FLY:
-			//	e = new EnemyFly();
-			//	break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_FIRE:
-			//	e = new EnemyFire();
-			//	break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_LIZARD_SMALL:
-			//	e = new EnemyLizardSmall();
-			//	break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_LIZARD_BIG:
-			//	e = new EnemyLizardBig();
-			//	break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_DRAGON:
-			//	e = new EnemyDragon();
-			//	break;
-			//case EnemyBase::ENEMY_TYPE::E_TYPE_BOSS:
-			//	e = new EnemyBoss();
-			//	break;
-		}
-
-		if (e != nullptr) {
-			e->Load();
-			e->Init();
-			// 可変長配列に要素を追加する
-			enemy_.push_back(e);
-			enCounter = 0; // エンカウンターをリセット
-		}
-	}
 
 #pragma region 画面演出
 	if (hitStop_ > 0) { hitStop_--; return; }
@@ -140,6 +97,7 @@ void GameScene::Update(void)
 
 	stage_->Update();
 	player_->Update();
+	enemy_->Update();
 
 	// 当たり判定
 	collision_->Check();
@@ -186,6 +144,8 @@ void GameScene::Draw(void)
 
 	stage_->Draw();
 	player_->Draw();
+	enemy_->Draw();
+	
 
 	int elapsed = GetNowCount() - startTimer_;
 	int remain = max(0, limitTime_ - elapsed);
@@ -214,7 +174,14 @@ void GameScene::Release(void)
 		delete player_;
 		player_ = nullptr;
 	}
-	if (stage_) {
+
+	if (enemy_ != nullptr) {
+		enemy_->Release();
+		delete enemy_;
+		enemy_ = nullptr;
+	}
+
+	if (stage_ != nullptr) {
 		stage_->Release();
 		delete stage_;
 		stage_ = nullptr;
@@ -265,3 +232,5 @@ Vector2I GameScene::ShakePoint(void)
 
 	return ret;
 }
+
+
